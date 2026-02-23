@@ -1,0 +1,2 @@
+local_time	boc_date	boc_time	spot_sell_100	spot_sell_1
+2026-02-23T22:18:47	2026/02/24	00:00:05	818.0300	8.180300
