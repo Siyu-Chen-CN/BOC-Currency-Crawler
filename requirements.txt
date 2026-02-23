@@ -1,0 +1,33 @@
+brotlicffi @ file:///C:/miniconda3/conda-bld/brotlicffi_1764961392766/work
+certifi @ file:///C:/Users/task_176765924091863/croot/certifi_1767659364229/work/certifi
+cffi @ file:///C:/miniconda3/conda-bld/cffi_1761832793693/work
+charset-normalizer @ file:///C:/miniconda3/conda-bld/charset-normalizer_1761744988796/work
+contourpy @ file:///C:/miniconda3/conda-bld/contourpy_1763643941183/work
+cycler @ file:///C:/Users/task_176606795666152/croot/cycler_1766068071140/work
+fonttools @ file:///C:/Users/dev-admin/buildout/croot/fonttools_1768580908301/work
+idna @ file:///C:/Users/dev-admin/buildout/croot/idna_1762551230734/work
+kiwisolver @ file:///C:/miniconda3/conda-bld/kiwisolver_1764159361484/work
+lxml @ file:///C:/miniconda3/conda-bld/lxml_1764009760018/work
+matplotlib==3.10.8
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592920453/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593081220/work
+numpy @ file:///C:/Users/task_177073258983153/croot/numpy_and_numpy_base_1770732694990/work/dist/numpy-2.4.2-cp314-cp314-win_amd64.whl#sha256=6fff17093562f8f8e5d85d803b974fe59006e05c78f4a39ca308d1f926dbbcc7
+packaging @ file:///C:/miniconda3/conda-bld/packaging_1761049098810/work
+pandas @ file:///C:/Users/task_177064219432311/croot/pandas_1770643004279/work
+pillow @ file:///C:/Users/task_176943337702255/croot/pillow_1769433480741/work
+pycparser @ file:///C:/Users/dev-admin/buildout/croot/pycparser_1759955361075/work
+pyparsing @ file:///C:/miniconda3/conda-bld/pyparsing_1763973805642/work
+PyQt6==6.10.2
+PyQt6_sip @ file:///C:/Users/dev-admin/buildout/croot/pyqt-split_1771576915986/work/pyqt_sip
+PySocks @ file:///C:/miniconda3/conda-bld/pysocks_1761753029698/work
+python-dateutil @ file:///C:/Users/dev-admin/buildout/croot/python-dateutil_1759954839763/work
+requests @ file:///C:/miniconda3/conda-bld/requests_1762359708170/work
+setuptools==80.10.2
+sip @ file:///C:/Users/task_177080690577686/croot/sip_1770807597220/work
+six @ file:///C:/Users/dev-admin/buildout/croot/six_1759954493303/work
+tornado @ file:///C:/Users/dev-admin/buildout/croot/tornado_1768567268628/work
+tzdata @ file:///home/task_176829656558347/croot/python-tzdata_1768296637279/work
+urllib3 @ file:///C:/Users/task_176781036399437/croot/urllib3_1767810487549/work
+wheel==0.46.3
+win_inet_pton @ file:///C:/miniconda3/conda-bld/win_inet_pton_1761746275387/work
