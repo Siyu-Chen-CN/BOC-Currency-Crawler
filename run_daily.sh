@@ -6,21 +6,27 @@ PY="$REPO/.venv/bin/python"
 
 cd "$REPO"
 
-# 1. 抓取最新汇率
 "$PY" "$REPO/boc_eur_cny_spot.py" fetch
-
-# 2. 画图
 "$PY" "$REPO/boc_eur_cny_spot.py" plot
 
-# 3. 提交到 Git
 /usr/bin/git add .
-
-# 没有变更就退出，不报错
 if /usr/bin/git diff --cached --quiet; then
     echo "No changes to commit."
-    exit 0
+else
+    /usr/bin/git commit -m "Update BOC EUR/CNY data $(date '+%F %T')"
+    /usr/bin/git push
 fi
 
-/usr/bin/git commit -m "Update BOC EUR/CNY data $(date '+%F %T')"
+LAST_RATE="$(tail -n 1 "$REPO/boc_eur_spot.txt")"
+PLOT_FILE="$REPO/eur_spot_trend.png"
+NOW="$(date '+%F %T')"
 
-/usr/bin/git push
+CAPTION="✅ BOC EUR/CNY daily update
+Time: ${NOW}
+Latest record:
+${LAST_RATE}"
+
+curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+  -F "chat_id=${TELEGRAM_CHAT_ID}" \
+  -F "photo=@${PLOT_FILE}" \
+  --form-string "caption=${CAPTION}"
