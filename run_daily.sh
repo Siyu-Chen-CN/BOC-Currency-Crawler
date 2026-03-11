@@ -17,7 +17,7 @@ else
     /usr/bin/git push
 fi
 
-LAST_RATE="$(tail -n 1 "$REPO/boc_eur_spot.txt")"
+LAST_RATE="$(tail -n 1 "$REPO/boc_eur_spot.txt" | cut -f2-)"
 PLOT_FILE="$REPO/eur_spot_trend.png"
 NOW="$(date '+%F %T')"
 
