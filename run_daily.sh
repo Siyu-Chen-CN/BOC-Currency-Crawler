@@ -26,7 +26,7 @@ Time: ${NOW}
 Latest record:
 ${LAST_RATE}"
 
-curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
-  -F "chat_id=${TELEGRAM_CHAT_ID}" \
+curl -sS -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto" \
+  -F "chat_id=${CHAT_ID}" \
   -F "photo=@${PLOT_FILE}" \
   --form-string "caption=${CAPTION}"
